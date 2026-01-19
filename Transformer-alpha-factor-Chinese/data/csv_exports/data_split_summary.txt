@@ -1,0 +1,45 @@
+
+数据划分汇总报告
+生成时间: 2026-01-19 17:34:29
+
+一、总体信息
+总交易日数: 421
+总股票数量: 298
+特征维度: 20
+
+二、时间划分详情
+训练集时间: 2024-04-02 到 2025-06-20 (共294天)
+验证集时间: 2025-06-23 到 2025-09-17 (共63天)
+测试集时间: 2025-09-18 到 2025-12-24 (共64天)
+
+三、样本数量统计
+训练集样本数: 87102
+验证集样本数: 18517
+测试集样本数: 18783
+总计样本数: 124402
+
+四、股票数量统计
+训练集股票数: 298
+验证集股票数: 295
+测试集股票数: 294
+
+五、文件保存位置
+1. Pickle文件（用于训练）:
+   - 训练集: ./data/train_features.pkl, ./data/train_labels.pkl
+   - 验证集: ./data/val_features.pkl, ./data/val_labels.pkl
+   - 测试集: ./data/test_features.pkl, ./data/test_labels.pkl
+
+2. CSV示例文件（用于查看）:
+   - 训练集: ./data/csv_exports/train_features_sample.csv, ./data/csv_exports/train_labels_sample.csv
+   - 验证集: ./data/csv_exports/val_features_sample.csv, ./data/csv_exports/val_labels_sample.csv
+   - 测试集: ./data/csv_exports/test_features_sample.csv, ./data/csv_exports/test_labels_sample.csv
+
+六、特征列列表
+['returns', 'high_low_pct', 'open_close_pct', 'volume_ma5', 'volume_ma20', 'volume_ratio', 'ma5', 'ma10', 'ma20', 'ma60', 'close_vs_ma5', 'close_vs_ma20', 'ma5_vs_ma20', 'volatility_5', 'volatility_20', 'momentum_5', 'momentum_10', 'momentum_20', 'rsi', 'bb_position']
+
+七、数据完整性检查
+训练集特征NaN数量: 0
+验证集特征NaN数量: 0
+测试集特征NaN数量: 0
+
+注意：CSV示例文件只保存了前1000/500行数据，完整数据请查看pickle文件。
